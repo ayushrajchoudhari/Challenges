@@ -1,0 +1,65 @@
+:root {
+    --ff-poppins: 'Poppins', sans-serif;
+
+    --fw-light: 200;
+    --fw-normal: 400;
+    --fw-bold: 700;
+
+    --fs-400: 0.9375rem;
+    --fs-500: 1.25rem;
+    --fs-600: 1.625rem;
+    --fs-900: 2.5rem;
+
+    --clr-neutral-900: black;
+    --clr-neutral-400: grey;
+    --clr-neutral-100: white;
+
+    --clr-red: hsl(0, 78%, 62%);
+    --clr-cyan: hsl(180, 62%, 55%);
+    --clr-orange: hsl(34, 97%, 64%);
+    --clr-blue: hsl(212, 86%, 64%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+html {
+    font-family: var(--ff-poppins);
+    font-weight: var(--fw-normal);
+    line-height: 1.7;
+    color: var(--clr-neutral-400);
+}
+
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--clr-neutral-900);
+    line-height: 1.1;
+}
+
+/* -----FLEX----- */
+.flex {
+    display: flex;
+}
+
+.flex > * {
+    flex: 1;
+    /* it basically sets the flex basis to equal according to the width required for every direct child of class flex */
+}
